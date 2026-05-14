@@ -329,7 +329,7 @@ Free version works on your machine only.
 Cloud version works on any user's machine globally.  
 Mac and Linux support. Knowledge graph. Action logs. Reliability scores.
 
-**[desksor.dev](https://desksor.dev) — starts at $9/month**
+**In Devlopment — starts at $9/month**
 
 ---
 
@@ -346,4 +346,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
 ---
 
 *Built by [Aivorize](https://github.com/Kaif-ur-Rehman)*  
-*desksor.dev — AI sees clearly. Finally.*
+*desksor — AI sees clearly. Finally.*
