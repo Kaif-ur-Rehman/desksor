@@ -1,0 +1,35 @@
+{
+  "name": "@desksor/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Desksor — gives Claude Code and Cursor eyes and hands on Windows",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "desksor-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ws": "^8.14.0"
+  },
+  "keywords": [
+    "mcp",
+    "desksor",
+    "ai",
+    "automation",
+    "windows",
+    "accessibility",
+    "claude"
+  ],
+  "author": "Aivorize",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aivorize/desksor"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

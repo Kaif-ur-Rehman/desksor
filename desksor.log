@@ -1,0 +1,39 @@
+[2026-05-14 07:50:00,583] Desksor Agent initialized.
+[2026-05-14 07:50:01,189] Action took 602 ms — exceeds 500ms target.
+[2026-05-14 07:50:01,190] [system] [get_open_apps] [-] [OK] [] [602ms]
+[2026-05-14 07:50:55,014] Desksor Agent initialized.
+[2026-05-14 07:50:55,410] [system] [get_open_apps] [-] [OK] [] [394ms]
+[2026-05-14 07:50:56,115] Action took 703 ms — exceeds 500ms target.
+[2026-05-14 07:50:56,116] [notepad] [open_app] [-] [OK] [] [703ms]
+[2026-05-14 07:50:57,380] [Notepad] [read] [-] [OK] [] [249ms]
+[2026-05-14 07:50:58,743] Action took 1360 ms — exceeds 500ms target.
+[2026-05-14 07:50:58,744] [Notepad] [type] [Text Editor] [OK] [] [1360ms]
+[2026-05-14 07:50:58,899] [system] [key_press] [ctrl+s] [OK] [] [153ms]
+[2026-05-14 07:50:59,561] [system] [key_press] [escape] [OK] [] [153ms]
+[2026-05-14 07:51:08,080] Desksor Agent initialized.
+[2026-05-14 07:51:08,527] [system] [get_open_apps] [-] [OK] [] [446ms]
+[2026-05-14 07:51:09,215] Action took 685 ms — exceeds 500ms target.
+[2026-05-14 07:51:09,215] [notepad] [open_app] [-] [OK] [] [685ms]
+[2026-05-14 07:51:10,452] [Notepad] [read] [-] [OK] [] [225ms]
+[2026-05-14 07:51:11,816] Action took 1361 ms — exceeds 500ms target.
+[2026-05-14 07:51:11,819] [Notepad] [type] [Text Editor] [OK] [] [1361ms]
+[2026-05-14 07:51:11,976] [system] [key_press] [ctrl+s] [OK] [] [152ms]
+[2026-05-14 07:51:12,638] [system] [key_press] [escape] [OK] [] [153ms]
+[2026-05-14 07:51:33,830] Desksor Agent initialized.
+[2026-05-14 07:51:34,357] Action took 518 ms — exceeds 500ms target.
+[2026-05-14 07:51:34,358] [system] [get_open_apps] [-] [OK] [] [518ms]
+[2026-05-14 07:51:38,441] [browser] [console] [-] [FAIL] [Chrome is not running in debug mode. Launch Chrome with:
+
+  chrome.exe --remote-debugging-port=9222
+
+Or Edge:
+
+  msedge.exe --remote-debugging-port=9222
+
+You can add this flag by creating a shortcut and editing its target.] [4081ms]
+[2026-05-14 07:52:10,666] Desksor Agent initialized.
+[2026-05-14 07:52:11,642] Action took 974 ms — exceeds 500ms target.
+[2026-05-14 07:52:11,642] [notepad] [open_app] [-] [OK] [] [974ms]
+[2026-05-14 07:52:13,597] Action took 939 ms — exceeds 500ms target.
+[2026-05-14 07:52:13,598] [Notepad] [type] [Text Editor] [OK] [] [939ms]
+[2026-05-14 07:52:13,752] [system] [key_press] [ctrl+s] [OK] [] [152ms]

@@ -1,0 +1,172 @@
+Metadata-Version: 2.4
+Name: desksor
+Version: 0.1.0
+Summary: Give your AI eyes. Let it see everything on your computer.
+Home-page: https://github.com/aivorize/desksor
+Author: Aivorize
+Author-email: hello@aivorize.com
+Keywords: automation accessibility ai agent windows pywinauto mcp
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Operating System
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywinauto>=0.6.8
+Requires-Dist: pyautogui>=0.9.54
+Requires-Dist: websockets>=11.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: openpyxl>=3.1.0
+Requires-Dist: aiofiles>=23.0.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: pdfplumber>=0.9.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Desksor
+
+**Give your AI eyes. Let it see everything on your computer.**
+
+---
+
+You use Claude Code. You use Cursor.
+They are brilliant. But they are blind.
+
+They cannot see your browser console.
+They cannot see your Excel data.
+They cannot see errors in your running app.
+They cannot see what is open on your screen.
+
+You spend half your day copy-pasting
+context into AI that should already know.
+
+Desksor fixes this.
+
+---
+
+## The difference
+
+**Without Desksor**
+```
+You: "Claude, here is the error..." [paste]
+You: "And here is the network request..." [paste]
+You: "And the variable looks like..." [paste]
+Claude: "I see, the problem is..."
+```
+
+**With Desksor**
+```
+You: "Claude, fix the bug."
+Claude reads your console, your code, your app state.
+Claude: "Fixed. Line 42."
+```
+
+---
+
+## Install
+
+```bash
+pip install desksor
+```
+
+## Use in 3 lines
+
+```python
+from desksor import Agent
+
+agent = Agent()
+result = agent.click("Excel", "Save")
+```
+
+## Connect to Claude Code
+
+Add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "desksor": {
+      "command": "npx",
+      "args": ["@desksor/mcp"]
+    }
+  }
+}
+```
+
+Claude now sees everything on your PC.
+
+---
+
+## What your AI can see
+
+- Any open app — full structure and content
+- Browser — console errors, network requests, page structure
+- Files — read any file, search any folder
+- System — running processes, clipboard, active window
+
+## What your AI can do
+
+- Click anything in any app by name — never breaks
+- Type into any field in any app
+- Open and close apps
+- Save documents
+- Read file contents
+- Control your entire workflow
+
+## Why it never breaks
+
+Traditional automation:
+```python
+click(x=342, y=156)  # breaks when app updates
+```
+
+Desksor:
+```python
+agent.click("Excel", "Save")  # works forever
+```
+
+Apps update their design. Buttons move. Colors change.
+The structure stays the same. Save is always called Save.
+Desksor reads the structure. It never breaks.
+
+---
+
+## Works with
+
+- Claude Code
+- Cursor
+- Any MCP-compatible tool
+- Your own Python code
+
+## Requirements
+
+- Windows 10 or 11
+- Python 3.8+
+- Chrome with `--remote-debugging-port=9222` for browser features
+
+## License
+
+MIT — free forever for local use.
+Cloud version at desksor.dev
+
+---
+
+*Built by Aivorize*
